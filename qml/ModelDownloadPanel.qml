@@ -53,7 +53,7 @@ Item {
         }
 
         Label {
-            text: "Models saved to: " + ModelDownloader.sharedModelsDir()
+            text: "Models saved to: " + root.downloader.sharedModelsDir()
             color: root.colorTextDim
             font.pixelSize: 12
             wrapMode: Text.Wrap
