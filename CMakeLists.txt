@@ -10,8 +10,9 @@ find_package(Qt6 REQUIRED COMPONENTS Core Network Qml Quick)
 qt_add_library(sinophone_qt STATIC)
 
 qt_add_qml_module(sinophone_qt
-    URI     "Sinophone.Qt"
-    VERSION  1.0
+    URI             "Sinophone.Qt"
+    VERSION          1.0
+    RESOURCE_PREFIX "/qt/qml"
     QML_FILES
         qml/ModelDownloadPanel.qml
     SOURCES
